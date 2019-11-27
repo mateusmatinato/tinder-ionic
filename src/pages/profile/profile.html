@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar hideBackButton>
+    <ion-grid>
+      <ion-row align-items-stretch>
+        <ion-col size="4" text-center style="margin-top:auto; margin-bottom: auto;">
+          <button id="buttonProfileHeader" ion-button icon-only color="light" round disabled>
+            <ion-icon name="ios-person"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col size="4" text-center style="margin-top:auto; margin-bottom: auto;">
+          <img src="assets/imgs/logoTinderIbilce.png" alt="" style="background: transparent;" style="max-height: 50px;"
+            (click)="home()">
+        </ion-col>
+        <ion-col size="4" text-center style="margin-top:auto; margin-bottom: auto;">
+          <button id="buttonChatHeader" ion-button icon-only color="light" round (click)="chatm()">
+            <ion-icon name="ios-text"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <p text-center style="margin-bottom: 0px;">
+    <img id="imgPerfil" src="assets/imgs/profile.jpeg">
+  </p>
+    <h3 text-center style="margin-bottom: 0px; margin-top: 5px;">Mateus Matinato, 21</h3>
+    <h5 text-center style="color: grey; font-size: 16px; margin-top: 0px;">Ciência da Computação</h5>
+
+  <ion-row text-center>
+    <ion-col>
+      <button ion-button icon-left outline color="tinder">
+        <ion-icon style="margin-top:-4px" class="fa-cog"></ion-icon>
+        Configurações
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left outline color="tinder">
+        <ion-icon style="margin-top:-4px" class="fa-user"></ion-icon>
+        Editar Perfil
+      </button>
+    </ion-col>
+  </ion-row>
+  <p text-center>
+    <button ion-button full (click)="logout()" style="border-radius:40px; background: linear-gradient(to right, rgb(65, 64, 64) , grey, rgb(65, 64, 64));
+  ">Sair</button>
+  </p>
+</ion-content>

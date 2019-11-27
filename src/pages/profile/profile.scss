@@ -1,0 +1,20 @@
+page-profile {
+    
+      ion-content{
+            #imgPerfil{
+                  width:120px;
+                  height:120px;
+                  border-radius:50%;
+                  object-fit: cover;
+            }
+      }
+
+
+      button:disabled{
+            background-color: #ee5a66;
+            color: #fff;
+            opacity: 0.8!important;
+      }
+
+
+}

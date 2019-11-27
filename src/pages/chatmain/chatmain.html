@@ -1,0 +1,100 @@
+<ion-header>
+  <ion-navbar hideBackButton>
+    <ion-grid>
+      <ion-row align-items-stretch>
+        <ion-col size="4" text-center style="margin-top:auto; margin-bottom: auto;">
+          <button id="buttonProfileHeader" ion-button icon-only color="light" round (click)="pho()">
+            <ion-icon name="ios-person"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col size="4" text-center style="margin-top:auto; margin-bottom: auto;">
+          <img src="assets/imgs/logoTinderIbilce.png" alt="" style="background: transparent;" style="max-height: 50px;" (click)="home()">
+        </ion-col>
+        <ion-col size="4" text-center style="margin-top:auto; margin-bottom: auto;">
+          <button id="buttonChatHeader" ion-button icon-only color="light" round disabled>
+            <ion-icon name="ios-text"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div id="matchList">
+    <h1>Novos Matches</h1>
+    <ion-row nowrap class="listHorizontal">
+      <ion-col col-3>
+          <img src="assets/imgs/disha.jpg" style="border-radius:50%">
+          <h1 class="name">Disha</h1>
+      </ion-col>
+      <ion-col col-3>
+          <img src="assets/imgs/disha.jpg" style="border-radius:50%">
+          <h1 class="name">Disha</h1>
+      </ion-col>
+      <ion-col col-3>
+          <img src="assets/imgs/disha.jpg" style="border-radius:50%">
+          <h1 class="name">Disha</h1>
+      </ion-col>
+      <ion-col col-3>
+          <img src="assets/imgs/disha.jpg" style="border-radius:50%">
+          <h1 class="name">Disha</h1>
+      </ion-col>
+      <ion-col col-3>
+          <img src="assets/imgs/disha.jpg" style="border-radius:50%">
+          <h1 class="name">Disha</h1>
+      </ion-col>
+      <ion-col col-3>
+          <img src="assets/imgs/disha.jpg" style="border-radius:50%">
+          <h1 class="name">Disha</h1>
+      </ion-col>
+
+    </ion-row>
+  </div>
+
+  <div id="mensagens">
+    <h1>Mensagens</h1>
+    <ion-list>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/disha.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>Disha</h2> <br>
+        <p>This is text message</p>
+        <ion-badge item-end color="tinder" color="tinder">2</ion-badge>
+
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/disha.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>Disha</h2>
+        <ion-badge item-end color="tinder">2</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/disha.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>Disha</h2>
+        <ion-badge item-end color="tinder" color="tinder">2</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/disha.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>Disha</h2>
+        <ion-badge item-end color="tinder">2</ion-badge>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/disha.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>Disha</h2>
+        <ion-badge item-end color="tinder">2</ion-badge>
+      </ion-item>
+
+    </ion-list>
+
+  </div>
+</ion-content>

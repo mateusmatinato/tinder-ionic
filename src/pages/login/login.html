@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Login - Tinder</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <h4 text-center padding>Conheça novas pessoas</h4>
+  <div text-center>
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit(); $event.preventDefault()">
+
+      <ion-item>
+        <ion-icon name="mail" item-left></ion-icon>
+        <ion-input type="text" placeholder="Email" formControlName="mail"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="lock" item-left></ion-icon>
+        <ion-input type="password" placeholder="Senha" formControlName="password"></ion-input>
+      </ion-item>
+    </form>
+  </div>
+  <p text-center padding>
+    <button ion-button full color="tinder" class="btn" (click)="signin()">Entrar</button>
+    <button ion-button full color="tinder" class="btn" (click)="signup()">Cadastre-se</button>
+  </p>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <p text-center>
+      Desenvolvido por: <span class="linkGit">Mateus Matinato</span>
+    </p>
+    <p text-center>
+      <a class="linkGit" target="_BLANK" href="https://github.com/mateusmatinato/tinder-ionic"><ion-icon class="fa-github"></ion-icon> GitHub</a>
+    </p>
+  </ion-toolbar>
+</ion-footer>

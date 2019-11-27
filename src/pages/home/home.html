@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-navbar style="min-height:80px">
+    <ion-grid>
+      <ion-row align-items-stretch>
+        <ion-col size="4" text-center style="margin-top:auto; margin-bottom: auto;">
+          <button id="buttonProfileHeader" ion-button icon-only color="light" round (click)="pho()">
+            <ion-icon name="ios-person"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col size="4" text-center style="margin-top:auto; margin-bottom: auto;">
+          <img src="assets/imgs/logoTinderIbilce.png" alt="" style="background: transparent;" style="max-height: 50px;">
+        </ion-col>
+        <ion-col size="4" text-center style="margin-top:auto; margin-bottom: auto;">
+          <button id="buttonChatHeader" ion-button icon-only color="light" round (click)="chatm()">
+            <ion-icon name="ios-text"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>
+
+  <div id="foto">
+    <div id="nextFoto" (click)="nextFoto()" style="z-index: 100;"></div>
+    <div id="prevFoto" (click)="prevFoto()" style="z-index: 100;"></div>
+    <ion-slides pager="true" effect="slide">
+      <ion-slide>
+        <img src="assets/imgs/profile.jpeg">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/profile2.jpeg">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/profile3.jpeg">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/profile.jpeg">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/profile2.jpeg">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/profile3.jpeg">
+      </ion-slide>
+    </ion-slides>
+
+
+    <div id="nome" (click)="mostraInformacoes()">
+      <span *ngIf="mostraNomeFoto">
+        <p style="font-size: 21px;"><strong>Mateus Matinato, 21</strong></p>
+        <p>
+          Ciência da Computação
+        </p>
+      </span>
+      <div id='iconeMaisInfo'>
+        <ion-icon class="fa-info-circle"></ion-icon>
+      </div>
+
+    </div>
+  </div>
+
+  <div padding id="descricao" style="display: none;">
+    <p font-size="21px;"><strong>Mateus Matinato, 21</strong></p>
+    <p>
+      <ion-icon class="fa-graduation-cap"></ion-icon> Ciência da Computação
+      <br>
+      <ion-icon class="fa-briefcase"></ion-icon> GBD - Grupo de Banco de Dados
+    </p>
+    <div class="hr"></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti earum saepe, quisquam eveniet quis, assumenda
+      esse doloremque repellat laudantium debitis quod laboriosam doloribus veniam, nemo ullam maiores distinctio
+      dignissimos corporis.
+    </p>
+  </div>
+
+
+</ion-content>
+<ion-footer>
+  <ion-buttons text-center>
+
+    <button ion-button icon-only class="buttonMenuInferior btnNope">
+      <ion-icon class="fa-times"></ion-icon>
+    </button>
+
+    <button ion-button icon-only (click)="like()" class="buttonMenuInferior btnLike">
+      <ion-icon class="fa-heart"></ion-icon>
+    </button>
+
+  </ion-buttons>
+</ion-footer>

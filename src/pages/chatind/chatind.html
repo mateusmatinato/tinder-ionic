@@ -1,0 +1,65 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-row>
+      <ion-col>
+        <img id="imgPerfil" src="assets/imgs/profile.jpeg">
+      </ion-col>
+      <ion-col id="nomePerfil">
+        Mateus
+      </ion-col>
+      <ion-col id="botaoMaisInfo" text-right>
+        <button ion-button icon-only clear style="color: #ef5339;">
+          <ion-icon class="fa-ellipsis-h"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+  <div id="mensagens">
+    <ion-row style="margin-top:5px">
+      <div id="msgMine">
+        <p style=" padding:5px; color:white">Hi this is message.</p>
+      </div>
+    </ion-row>
+    <ion-row style="margin-top:5px">
+      <div id="imgTheir" text-left style="    margin-top: 12px">
+        <img id="imgChat" src="assets/imgs/profile2.jpeg">
+      </div>
+      <div id="msgTheir">
+        <p style="padding:5px; color:black">Hi this is message. Hi this is message.Hi this is message.</p>
+      </div>
+    </ion-row>
+    <ion-row style="margin-top:5px">
+      <div id="msgMine">
+        <p style=" padding:5px; color:white">Hi this is message.</p>
+      </div>
+    </ion-row>
+    <ion-row style="margin-top:5px">
+      <div id="imgTheir" text-left style="    margin-top: 12px">
+        <img id="imgChat" src="assets/imgs/profile2.jpeg">
+      </div>
+      <div id="msgTheir">
+        <p style="padding:5px; color:black">Hi this is message. Hi this is message.Hi this is message.</p>
+      </div>
+    </ion-row>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+    <ion-row>
+      <div id="inputMsg">
+        <ion-input type="text" placeholder="Digite uma mensagem" [(ngModel)]="textoMensagem"></ion-input>
+      </div>
+      <div id="botaoSend">
+        <div class="iconSend" text-center>
+          <button ion-button icon-only clear style="color: #b3b3b3;" (click)="sendMessage()">
+            <ion-icon class="fa-paper-plane"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </ion-row>
+  </ion-footer>

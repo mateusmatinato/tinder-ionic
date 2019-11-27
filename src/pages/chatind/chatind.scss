@@ -1,0 +1,141 @@
+page-chatind {
+
+    $bg-msgMine: #ef5539;
+    $bg-msgTheir: #d3d3d3;
+
+    .item-md.item-block .item-inner {
+        border-bottom: none !important;
+    }
+    .item-ios.item-block .item-inner{
+        border-bottom: none !important;
+    }
+    .toolbar-md{
+        max-height: 80px
+    }
+    .toolbar-ios{
+        max-height: 80px
+    }
+    
+    #nomePerfil{
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 20px;
+    }
+
+    #imgPerfil{
+        width:50px;
+        height:50px;
+        border-radius:50%;
+        object-fit: cover;
+        float: right;
+    }
+
+    #botaoMaisInfo{
+        margin-top: auto;
+        margin-bottom: auto;
+        button{
+            font-size: 20px;
+        }
+    }
+
+    #imgChat{
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        object-fit: cover;
+    }
+
+    #msgMine{
+        position: relative;
+        margin-left: auto;
+        margin-right: 10px;
+        background-color: $bg-msgMine;
+        min-height:50px;
+        border-radius:10px 10px 0px 10px;
+
+        p{
+            margin-top: 0px;
+            margin-bottom: 2px;
+        }
+    }
+
+    #msgMine:after{
+        content: '';
+        position: absolute;
+        right: 5px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border: 14px solid transparent;
+        border-left-color: $bg-msgMine;
+        border-right: 0;
+        border-bottom: 0;
+        margin-top: -7px;
+        margin-right: -14px;
+    }
+
+    #imgTheir{
+        width: 13%;
+        margin-left: 5px;
+    }
+
+    #msgTheir{
+        margin-left: 3px;
+        position: relative;
+        width: 60%;
+        background-color:$bg-msgTheir;
+        min-height:50px;
+        border-radius:10px 10px 10px 0px;
+
+        p{
+            margin-top: 0px;
+            margin-bottom: 2px;
+        }
+    }
+
+    #msgTheir:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 8px solid transparent;
+        border-right-color: $bg-msgTheir;
+        border-left: 0;
+        margin-top: -8px;
+        margin-left: -8px;
+    }
+
+    #inputMsg{
+        height: 40px;
+        width: 85%;
+        color: #707070;
+    }
+
+    #botaoSend{
+        height: 40px;
+        width: 15%;
+        margin-left: auto;
+        font-size: 17px;
+        position: relative;
+
+        .iconSend{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+
+
+    }
+
+    ion-footer{
+        padding: 5px 5px 5px 5px;
+        background: rgba(255,255,255,1);
+        background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+        
+      }
+
+}
